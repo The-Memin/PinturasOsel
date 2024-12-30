@@ -24,9 +24,85 @@
         <p class="text-secodary fw-bold text-center text-75">
             Pinturas Osel, tiene para ti, los siguientes videos que serán de gran ayuda en las actividades de capacitación y entrenamiento.
         </p>
+
+        <div class="container mt-5">
+            <!-- Video Principal -->
+            <div class="row mb-4">
+              <div class="col-12">
+                <video id="mainVideo" class="main-video" controls>
+                  <source src="./assets/videos/video_1.mp4" type="video/mp4">
+                  Tu navegador no soporta la reproducción de video.
+                </video>
+              </div>
+            </div>
+        
+            <!-- Carrusel de Videos Pequeños -->
+            <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex gap-2 text-center">
+                    <div class="col-3 bg-dark d-flex align-items-center justify-content-center">
+                      <video class="small-video" onclick="changeVideo('./assets/videos/video_2.mp4')" muted>
+                        <source src="./assets/videos/video_2.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="col-3 bg-dark d-flex align-items-center justify-content-center">
+                      <video class="small-video" onclick="changeVideo('./assets/videos/video_3.mp4')" muted>
+                        <source src="./assets/videos/video_3.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="col-3 bg-dark d-flex align-items-center justify-content-center">
+                      <video class="small-video" onclick="changeVideo('./assets/videos/video_4.mp4')" muted>
+                        <source src="./assets/videos/video_4.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="col-3 bg-dark d-flex align-items-center justify-content-center">
+                      <video class="small-video" onclick="changeVideo('./assets/videos/video_1.mp4')" muted>
+                        <source src="./assets/videos/video_1.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex gap-2 text-center">
+                    <div class="col-3 bg-dark d-flex align-items-center justify-content-center">
+                      <video class="small-video" onclick="changeVideo('./assets/videos/video_2.mp4')" muted>
+                        <source src="./assets/videos/video_2.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="col-3 bg-dark d-flex align-items-center justify-content-center">
+                      <video class="small-video" onclick="changeVideo('./assets/videos/video_3.mp4')" muted>
+                        <source src="./assets/videos/video_3.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="col-3 bg-dark d-flex align-items-center justify-content-center">
+                      <video class="small-video" onclick="changeVideo('./assets/videos/video_4.mp4')" muted>
+                        <source src="./assets/videos/video_4.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="col-3 bg-dark d-flex align-items-center justify-content-center">
+                      <video class="small-video" onclick="changeVideo('./assets/videos/video_1.mp4')" muted>
+                        <source src="./assets/videos/video_1.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Controles del Carrusel -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
     </div>
     
     <div id="footer-container"></div>
+    <script src="./js/changeVideo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
