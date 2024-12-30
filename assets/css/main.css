@@ -1,9 +1,41 @@
 /* Estilo para el fondo */
+:root{
+    --blue1: #193e57;
+    --blue1-hover: #245b81;
+    --blue2: #152c3b;
+    --blue2-hover: #19374a;
+    --blue3: #2196F3;
+    --blue-4: #014393;
+    --gray1: #353a41;
+    --gray2: rgb(188, 188, 188);
+    --bg1: #f1f3fa;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--gray1);
+    background-color: var(--bg1);
+    overflow-x: hidden;
+}
 .background-container {
     position: relative;
     width: 100%;
     min-height: 100vh; /* Altura completa de la pantalla */
     background: url('../img/bg1.jpg') no-repeat center center/cover;
+}
+.background-container-banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: auto;
+    padding-block: 2rem;
+    overflow: hidden;
+}
+.background-container-banner--1{
+    background: url('../img/Banner\ 12.png');
+}
+.background-container-banner--2{
+    background: url('../img/Banner\ 7.png');
 }
 /* Capa del gradiente */
 .background-overlay {
@@ -13,7 +45,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, rgba(5, 31, 79, 0.838), rgba(178, 178, 178, 0));
-    z-index: 1;
+    z-index: 0;
 }
 /* Contenido dentro del fondo */
 .content {
@@ -22,6 +54,17 @@
     color: #fff;
 }
 
+.icon{
+    height: 24px;
+}
+
+.icon-media{
+  height: 40px;
+}
+
+.icon-card{
+  width: 60px;
+}
 .rounded-img{
     width: 250px;
     height: 250px;
@@ -31,7 +74,291 @@
     margin-top: 10rem;
 }
 
-.z-2{
-    position: relative;
-    z-index: 2 !important;
+.my-10{
+  margin-block: 7em !important;
+}
+
+.foot-labels{
+    font-size: 15px;
+}
+
+.form-container {
+    background-color: var(--blue1);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+    color: #ffffff;
+}
+.form-control::placeholder {
+    color: #b0c4de;  /* Color del placeholder */
+    text-align: center; /* Centrar el texto */
+}
+
+.bg-banner{
+  position: absolute;
+  top: 50%;
+  left: 0 ;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/*Elementos de bootstrap modificados*/
+
+.btn-header-1{
+  width:6em;
+  background: rgb(14,10,81);
+background: linear-gradient(0deg, rgba(14,10,81,1) 0%, rgba(1,67,147,1) 65%);
+  position: relative;
+  img{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 80%;
+  }
+
+  &:hover{
+    border: 1px solid var(--blue-4);
+  }
+}
+
+.btn-custom {
+    background-color: var(--blue2);
+    border: 2px solid var(--blue1);
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-2{
+  background-color: var(--blue-4);
+  color: white;
+  text-wrap: nowrap;
+  font-size: 16px;
+  height: fit-content;
+  width: fit-content;
+  &:hover{
+    border: 1px solid var(--blue-4);
+  }
+}
+
+.btn-custom:hover {
+    background-color: var(--blue2-hover);
+    color: #ffffff;
+    border-color: var(--blue1-hover);
+}
+
+.card-curriculum{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+}
+
+.card-paint{
+  background-color: white;
+  border: 2px solid var(--gray2);
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px rgb(234, 234, 234);
+  padding: 1em;
+}
+
+
+.card-galeria{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 2px solid var(--gray2);
+  border-radius: 15px;
+  padding: 1em;
+  .btn{
+    font-size: 14px;
+    padding: 10px;
+    height: 3em;
+  }
+}
+
+.column-imgs{
+  img{
+    width: 50%;
+  }
+}
+
+.card-equipo{
+  display: flex;
+  gap: 1rem;
+  strong{
+    text-wrap: nowrap;
+  }
+}
+
+/* Estilos personalizados para el Header */
+#header-container{
+
+  nav{
+    display: none !important;
+  }
+
+  &.with-nav{
+    nav{
+      display: flex !important;
+    }
+  }
+}
+
+header {
+    background-color: var(--gray1); /* Fondo del Header */
+  }
+  
+  header .logo img {
+    max-height: 40px; /* Limitar el tamaño del logo */
+  }
+  
+  header .btn-light {
+    color: var(--blue3);
+    background-color: transparent;
+    border: none;
+  }
+  
+  header .btn-light:hover {
+    color: var(--blue3);
+  }
+  
+  .navbar-container {
+    display: none; /* Ocultar el navbar si no se necesita en una página */
+    a{
+      text-decoration: none;
+      max-width: 10em;
+      text-align: center;
+    }
+  }
+  
+  /* Mostrar navbar solo cuando haya una clase específica en el header */
+ 
+  
+.footer{
+  background-color: #014393;
+  color: white;
+
+  a{
+    color: white;
+  }
+}
+
+
+  /*Style for text*/
+
+  .text-xs{
+    font-size: 12px;
+  }
+
+  .text-sm{
+    font-size: 14px;
+  }
+
+  .text-base{
+    font-size: 16px;
+  }
+
+  .text-lg{
+    font-size: 18px;
+  }
+
+  .text-xl{
+    font-size: 20px;
+  }
+
+  .text-2xl{
+    font-size: 24px;
+  }
+
+  .text-3xl{
+    font-size: 30px;
+  }
+
+  .text-4xl{
+    font-size: 36px;
+  }
+  .text-5xl{
+    font-size: 42px;
+  }
+  .text-6xl{
+    font-size: 3.4rem;
+  }
+  .w-15{
+    width: 15%;
+  }
+
+
+  /*text*/
+  /* Text Shadow - Pequeño */
+.text-shadow-sm {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Text Shadow - Normal */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Text Shadow - Mediano */
+.text-shadow-md {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Text Shadow - Grande */
+.text-shadow-lg {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Text Shadow - Extra Grande */
+.text-shadow-xl {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Text Shadow - Doble Sombra (más artístico) */
+.text-shadow-2xl {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Text Shadow - Brillante */
+.text-shadow-bright {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Text Shadow - Neon */
+.text-shadow-neon {
+  text-shadow: 0 0 5px #03fa6e, 0 0 10px #03fa6e, 0 0 20px #03fa6e;
+}
+
+/* Text Shadow - Sutil */
+.text-shadow-subtle {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Shadow - Ninguna */
+.text-shadow-none {
+  text-shadow: none;
+}
+
+.text-blue{
+  color: var(--blue-4);
+}
+
+.img-rodillo{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -30%;
+  z-index: -1;
+  width: 130%;
 }
