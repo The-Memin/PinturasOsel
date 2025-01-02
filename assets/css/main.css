@@ -108,9 +108,11 @@ body {
 
 .btn-header-1{
   width:6em;
-  background: rgb(14,10,81);
-background: linear-gradient(0deg, rgba(14,10,81,1) 0%, rgba(1,67,147,1) 65%);
+  height: 2em;
   position: relative;
+  background: rgb(14,10,81);
+  background: linear-gradient(0deg, rgba(14,10,81,1) 0%, rgba(1,67,147,1) 65%);
+  
   img{
     top: 50%;
     left: 50%;
