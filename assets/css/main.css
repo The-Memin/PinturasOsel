@@ -59,15 +59,24 @@ body {
 }
 
 .icon-media{
-  height: 40px;
+  max-height: 40px;
 }
 
-.icon-card{
-  width: 60px;
+.icon-card {
+  max-width: 60px; /* Tamaño por defecto */
+}
+
+@media (max-width: 576px) { /* Pantallas móviles */
+  .icon-card {
+    max-width: 35px; /* Tamaño reducido en móviles */
+  }
 }
 .rounded-img{
-    width: 250px;
-    height: 250px;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1 / 1; /* Mantiene una relación de aspecto cuadrada */
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  object-fit: cover; 
 }
 
 .mt-6{
@@ -100,6 +109,7 @@ body {
   left: 0 ;
   transform: translateY(-50%);
   width: 100%;
+  height: 100%;
   z-index: -1;
   object-fit: cover;
 }
@@ -199,23 +209,32 @@ body {
 .card-equipo{
   display: flex;
   gap: 1rem;
+  cursor: pointer;
   strong{
     text-wrap: nowrap;
   }
 }
 
+#preview-image, #preview-image-2{
+  width: 10em;
+  object-fit: contain;
+  height: 12em;
+}
+
 /* Estilos personalizados para el Header */
-#header-container{
 
-  nav{
-    display: none !important;
-  }
+#menu-toggle {
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+}
 
-  &.with-nav{
-    nav{
-      display: flex !important;
-    }
-  }
+#mobile-menu {
+  z-index: 1050;
+}
+
+#mobile-menu.show {
+  display: block !important;
 }
 
 header {
@@ -261,7 +280,7 @@ header {
   /*Style for text*/
 
   .text-xs{
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .text-sm{

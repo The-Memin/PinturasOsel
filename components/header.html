@@ -1,12 +1,17 @@
-<!-- Header Component -->
 <header class="header bg-dark py-3">
-    <div class="container d-flex justify-content-between align-items-center">
+    <div class="container d-flex justify-content-between align-items-center ">
         <!-- Logo -->
         <a href="index.html" class="logo">
-        <img src="https://markvantest.live-website.com/olsen/assets/img/logo-inverse.webp" alt="Logo" class="img-fluid" style="max-height: 40px;">
+            <img src="https://markvantest.live-website.com/olsen/assets/img/logo-inverse.webp" alt="Logo" class="img-fluid" style="max-height: 40px;">
         </a>
 
-        <nav class="d-flex flex-column navbar-container gap-1">
+        <!-- Hamburger Menu for Mobile -->
+        <button class="btn d-lg-none text-light" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Navigation -->
+        <nav class="navbar-container d-none d-lg-flex flex-column gap-1">
             <div class="d-flex align-items-center justify-content-between text-sm fw-bold gap-4">
                 <a class="text-light" href="index.html">HOME</a>
                 <a class="text-light" href="avisos.html">AVISOS</a>
@@ -26,12 +31,30 @@
         </nav>
 
         <!-- Logout Icon -->
-        <div>
-        <button class="btn btn-light" id="logout-btn">
-            <img class="icon mx-1" src="../assets/icons/logout.png" alt=""><span class="text-sm">Cerrar sesión</span>
-        </button>
+        <div class="d-none d-lg-block">
+            <button class="btn btn-light" id="logout-btn">
+                <img class="icon mx-1" src="../assets/icons/logout.png" alt=""><span class="text-sm">Cerrar sesión</span>
+            </button>
         </div>
     </div>
 
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="d-lg-none d-md- bg-dark text-light p-4 position-absolute top-0 end-0 vh-100 w-75 collapse">
+        <div class="d-flex flex-column gap-3">
+            <a class="text-light" href="index.html">HOME</a>
+            <a class="text-light" href="avisos.html">AVISOS</a>
+            <a class="text-light" href="certificados.html">CERFTIFICADOS</a>
+            <a class="text-light" href="curriculum.html">CURRICULUM</a>
+            <a href="equipos.html" class="text-light">EQUIPOS</a>
+            <a href="especificaciones.html" class="text-light">ESPECIFICACIONES</a>
+            <a href="formulas.html" class="text-light">FORMULAS</a>
+            <a href="historia.html" class="text-light">HISTORIA</a>
+            <a href="precios.html" class="text-light">PRECIOS</a>
+            <a href="videoteca.html" class="text-light">VIDEOTECA</a>
+            <button class="btn fw-semibold text-dark text-xs border bg-white">RECURSOS</button>
+            <button class="btn btn-light" id="logout-btn">
+                <img class="icon mx-1" src="../assets/icons/logout.png" alt=""><span class="text-sm">Cerrar sesión</span>
+            </button>
+        </div>
+    </div>
 </header>
-  
