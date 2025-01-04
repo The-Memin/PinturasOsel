@@ -151,7 +151,8 @@ body {
   text-wrap: nowrap;
   font-size: 16px;
   height: fit-content;
-  width: fit-content;
+  width: fit-content !important;
+  
   &:hover{
     border: 1px solid var(--blue-4);
   }
@@ -308,14 +309,7 @@ header {
     color: var(--blue3);
   }
   
-  .navbar-container {
-    display: none; /* Ocultar el navbar si no se necesita en una página */
-    a{
-      text-decoration: none;
-      max-width: 10em;
-      text-align: center;
-    }
-  }
+ 
   
   /* Mostrar navbar solo cuando haya una clase específica en el header */
  

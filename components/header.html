@@ -39,11 +39,15 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="d-lg-none d-md- bg-dark text-light p-4 position-absolute top-0 end-0 vh-100 w-75 collapse">
-        <div class="d-flex flex-column gap-3">
+    <div id="mobile-menu" class="d-lg-none d-md-flex bg-dark text-light p-4 position-fixed top-0 end-0 vh-100 w-75 collapse">
+        <div class="d-flex flex-column gap-3 position-relative">
+            <!-- Botón para cerrar el menú -->
+            <button id="menu-close" class="btn-close text-light position-absolute top-0 end-0 mt-2 me-2" aria-label="Cerrar"></button>
+            
+            <!-- Enlaces del menú -->
             <a class="text-light" href="index.html">HOME</a>
             <a class="text-light" href="avisos.html">AVISOS</a>
-            <a class="text-light" href="certificados.html">CERFTIFICADOS</a>
+            <a class="text-light" href="certificados.html">CERTIFICADOS</a>
             <a class="text-light" href="curriculum.html">CURRICULUM</a>
             <a href="equipos.html" class="text-light">EQUIPOS</a>
             <a href="especificaciones.html" class="text-light">ESPECIFICACIONES</a>
@@ -57,4 +61,5 @@
             </button>
         </div>
     </div>
+    
 </header>
