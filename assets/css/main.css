@@ -157,6 +157,12 @@ body {
   }
 }
 
+@media (max-width: 770px) { /* Pantallas móviles */
+  .btn-custom-2{
+    width: 100%;
+  }
+}
+
 .btn-custom:hover {
     background-color: var(--blue2-hover);
     color: #ffffff;
@@ -173,6 +179,53 @@ body {
     width: 100%;
     height: 200px;
     object-fit: contain;
+  }
+}
+
+.card-responsive {
+  background-color: #f8f9fa; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  img {
+      max-width: 80px;
+      height: auto;
+      border-radius: 4px;
+  }
+
+  .product {
+      strong {
+          font-size: 1rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+      }
+  }
+
+  button {
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .fa-download {
+          font-size: 1rem;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .product {
+          text-align: center;
+
+          img {
+              margin-bottom: 0.5rem;
+          }
+      }
+
+      button {
+          margin-top: 1rem;
+      }
   }
 }
 
@@ -319,7 +372,7 @@ header {
   .w-15{
     width: 15%;
   }
-
+  
 
   /*text*/
   /* Text Shadow - Pequeño */
@@ -385,6 +438,10 @@ header {
   width: 130%;
 }
 
+.img-certificado{
+  width: 100%;
+  max-width: 14em;
+}
 /* Estilo para videos pequeños */
 .small-video {
   cursor: pointer;
