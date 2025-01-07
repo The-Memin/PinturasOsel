@@ -63,7 +63,15 @@
             <a href="historia.html" class="text-light">HISTORIA</a>
             <a href="precios.html" class="text-light">PRECIOS</a>
             <a href="videoteca.html" class="text-light">VIDEOTECA</a>
-            <button class="btn fw-semibold text-dark text-sm border bg-white">RECURSOS</button>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle fw-semibold text-dark text-xs border bg-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">RECURSOS</button>
+                <ul class="dropdown-menu text-sm" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">INFORMACIÓN</a></li>
+                    <li><a class="dropdown-item" href="#">MANUALES</a></li>
+                    <li><a class="dropdown-item" href="#">PRODUCTOS HOMOLOGADOS</a></li>
+                    <li><a class="dropdown-item" href="#">PRECIOS</a></li>
+                </ul>
+            </div>
             <button class="btn btn-light" id="logout-btn">
                 <img class="icon mx-1" src="../assets/icons/logout.png" alt=""><span class="text-sm">Cerrar sesión</span>
             </button>

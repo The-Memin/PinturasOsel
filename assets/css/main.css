@@ -138,7 +138,7 @@ body {
   }
 }
 
-.dropend .dropdown-toggle::after{
+.dropdown-toggle::after{
   display: none !important;
 }
 
