@@ -277,6 +277,10 @@ body {
 
 /* Estilos personalizados para el Header */
 
+#mobile-menu{
+  max-width: 22em;
+}
+
 #menu-toggle {
   font-size: 1.5rem;
   border: none;
