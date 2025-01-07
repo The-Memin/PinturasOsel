@@ -21,7 +21,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh; /* Altura completa de la pantalla */
-    background: url('../img/bg1.jpg') no-repeat center center/cover;
+    background: url('../img/bg-home.png') no-repeat center center/cover;
 }
 .background-container-banner{
     background-repeat: no-repeat;
@@ -31,20 +31,15 @@ body {
     padding-block: 2rem;
     overflow: hidden;
 }
-.background-container-banner--1{
-    background: url('../img/Banner\ 12.png');
-}
-.background-container-banner--2{
-    background: url('../img/Banner\ 7.png');
-}
+
 /* Capa del gradiente */
 .background-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(5, 31, 79, 0.838), rgba(178, 178, 178, 0));
+    height: 30%;
+    background: linear-gradient(to top, #004393, rgba(178, 178, 178, 0));
     z-index: 0;
 }
 /* Contenido dentro del fondo */
@@ -54,6 +49,13 @@ body {
     color: #fff;
 }
 
+.img-logo{
+  width: 8em;
+}
+
+.img-circle{
+  width: 25%;
+}
 .icon{
     height: 24px;
 }
@@ -134,6 +136,10 @@ body {
   &:hover{
     border: 1px solid var(--blue-4);
   }
+}
+
+.dropend .dropdown-toggle::after{
+  display: none !important;
 }
 
 .btn-custom {
@@ -270,9 +276,9 @@ body {
 }
 
 #preview-image, #preview-image-2{
-  width: 10em;
+  width: 50%;
+  aspect-ratio: 9/16;
   object-fit: contain;
-  height: 12em;
 }
 
 /* Estilos personalizados para el Header */
@@ -434,6 +440,10 @@ header {
   right: -30%;
   z-index: -1;
   width: 130%;
+}
+
+.img-marca{
+  max-width: 16em;
 }
 
 .img-certificado{

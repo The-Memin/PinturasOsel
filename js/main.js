@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     product.addEventListener('mouseout', () => {
-      previewImage.src = './assets/img/g.png';
+      previewImage.src = './assets/img/equipo1.png';
     });
     });
 
@@ -29,12 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     products2.forEach(product => {
     product.addEventListener('mouseover', () => {
       const imageSrc = product.getAttribute('data-image');
-      console.log('hola 2')
       previewImage2.src = imageSrc;
     });
 
     product.addEventListener('mouseout', () => {
-      previewImage2.src = './assets/img/fm.png';
+      previewImage2.src = './assets/img/equipo1.png';
     });
     });
 
