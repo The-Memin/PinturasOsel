@@ -50,7 +50,7 @@ body {
 }
 
 .img-logo{
-  width: 8em;
+  width: 5em;
 }
 
 .img-circle{
@@ -75,7 +75,7 @@ body {
 }
 .rounded-img{
   width: 100%;
-  max-width: 250px;
+  max-width: 200px;
   aspect-ratio: 1 / 1; /* Mantiene una relación de aspecto cuadrada */
   border-radius: 50%; /* Hace que la imagen sea redonda */
   object-fit: cover; 
@@ -93,12 +93,18 @@ body {
     font-size: 15px;
 }
 
+
+
 .form-container {
     background-color: var(--blue1);
-    border-radius: 20px;
+    border-radius: 14px;
     padding: 20px;
     max-width: 400px;
     color: #ffffff;
+    
+    input, button{
+      font-size: 12px;
+    }
 }
 .form-control::placeholder {
     color: #b0c4de;  /* Color del placeholder */
@@ -118,9 +124,17 @@ body {
 
 /*Elementos de bootstrap modificados*/
 
-.btn-header-1{
+.btn-logout{
+  width: fit-content;
+  padding: 0;
+}
+
+.btn-header{
   width:6em;
-  height: 2em;
+  height: 1.86em;
+}
+
+.btn-header-1{
   position: relative;
   background: rgb(14,10,81);
   background: linear-gradient(0deg, rgba(14,10,81,1) 0%, rgba(1,67,147,1) 65%);
@@ -142,12 +156,28 @@ body {
   display: none !important;
 }
 
+@media (max-width: 576px){
+  .dropdown-item::before{
+    transform: rotate(-90deg);
+  }
+}
+
+/* Estilo para posicionar submenús */
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
 .btn-custom {
     background-color: var(--blue2);
     border: 2px solid var(--blue1);
     color: #ffffff;
-    border-radius: 16px;
-    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 7px 16px;
     transition: all 0.3s ease;
 }
 
@@ -306,6 +336,8 @@ header {
   }
   
   header .logo img {
+    min-width: 100px;
+    object-fit: contain;
     max-height: 40px; /* Limitar el tamaño del logo */
   }
   
@@ -325,7 +357,7 @@ header {
  
   
 .footer{
-  background-color: #014393;
+  background-color: var(--blue-4);
   color: white;
 
   a{
