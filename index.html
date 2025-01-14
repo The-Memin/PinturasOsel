@@ -10,28 +10,28 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body-index">
 
-    <div class="background-container pt-5 vh-lg-100">
+    <div class="background-container pt-4 ">
         <div class="background-overlay"></div>
-        <div class="content d-flex justify-content-center align-items-center flex-column text-center">
+        <div class="container content d-flex justify-content-center align-items-center flex-column text-center px-0">
             <img class="img-fluid img-logo" src="./assets/img/osel_white.png" alt="pinturas osel">
-            <div class="container mt-5">
-                <div class="d-flex flex-column flex-md-row gap-md-5 justify-content-center align-items-center text-center">
+            <div class="container mt-3">
+                <div class="d-flex flex-column flex-md-row gap-md-5 justify-content-center justify-content-lg-between align-items-center text-center px-10">
                   <!-- Primera imagen -->
-                  <div class="col-6 col-md-3 mb-4 mb-md-0">
+                  <div class="col-8 col-md-3 mb-4 mb-md-0">
                     <img src="./assets/img/Proveedores.png" class="rounded-img img-fluid rounded-circle mb-3 img-circle" alt="Imagen 1">
                     <h3 class="fw-bold fs-4">WEBMAIL</h3>
                     <button class="btn btn-custom mt-2 text-sm">EMPLEADOS</button>
                   </div>
                   <!-- Segunda imagen -->
-                  <div class="col-6 col-md-3 mb-4 mb-md-0">
+                  <div class="col-8 col-md-3 mb-4 mb-md-0">
                     <img src="./assets/img/Empleados.png" class="rounded-img img-fluid rounded-circle mb-3" alt="Imagen 2" >
                     <h3 class="fw-bold fs-4">CFD-CFDI</h3>
                     <button class="btn btn-custom mt-2 text-sm">PROVEEDORES</button>
                   </div>
                   <!-- Tercera imagen -->
-                  <div class="col-6 col-md-3">
+                  <div class="col-8 col-md-3">
                     <img src="./assets/img/Distribuidores.png" class="rounded-img img-fluid rounded-circle mb-3" alt="Imagen 3">
                     <h3 class="fw-bold fs-4">CIAC</h3>
                     <button class="btn btn-custom mt-2 text-sm">DISTRIBUIDORES</button>
@@ -40,16 +40,16 @@
             </div>
         </div>
 
-        <div class="content container mt-5 mb-5 mb-lg-0 mt-lg-3">
-          <div class="d-flex justify-content-center justify-content-md-end">
-            <form class="form-container w-85 w-md-auto">
+        <div class="content container mt-5 mb-5 mb-lg-0 mt-lg-3 ml-10">
+          <div class="d-flex justify-content-center justify-content-md-end px-10">
+            <form class="form-container col-12 col-md-6 col-lg-3">
               <div class="mb-3">
-                <input type="text" id="username" class="form-control" placeholder="USUARIO">
+                <input type="text" id="username" class="form-control text-xs" placeholder="USUARIO">
               </div>
               <div class="mb-3">
-                <input type="password" id="password" class="form-control" placeholder="CONTRASEÑA">
+                <input type="password" id="password" class="form-control text-xs" placeholder="CONTRASEÑA">
               </div>
-              <button type="submit" class="btn btn-custom w-100">ACCESO</button>
+              <button type="submit" class="btn btn-custom text-xs w-100">ACCESO</button>
             </form>
           </div>
         </div>

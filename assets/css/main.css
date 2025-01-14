@@ -17,12 +17,22 @@ body {
     background-color: var(--bg1);
     overflow-x: hidden;
 }
+
+
+
 .background-container {
     position: relative;
     width: 100%;
     min-height: 100vh; /* Altura completa de la pantalla */
     background: url('../img/bg-home.png') no-repeat center center/cover;
 }
+
+@media (min-width: 1200px) {
+  .background-container{
+    height: 100vh;
+  }
+}
+
 .background-container-banner{
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,6 +91,10 @@ body {
   object-fit: cover; 
 }
 
+.px-10{
+  padding-inline: 10%;
+}
+
 .mt-6{
     margin-top: 10rem;
 }
@@ -101,10 +115,6 @@ body {
     padding: 20px;
     max-width: 400px;
     color: #ffffff;
-    
-    input, button{
-      font-size: 12px;
-    }
 }
 .form-control::placeholder {
     color: #b0c4de;  /* Color del placeholder */
@@ -152,8 +162,14 @@ body {
   }
 }
 
-.dropdown-toggle::after{
+.btn-drop.dropdown-toggle::after{
   display: none !important;
+}
+
+
+
+.dropdown-item-normal{
+  margin-left: 7px;
 }
 
 @media (max-width: 576px){
